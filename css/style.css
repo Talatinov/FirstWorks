@@ -1,0 +1,266 @@
+/* general */
+body, html {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body {
+    background-image: url(../images/153000789_844366826409734_2075588742918659283_n.jpg);
+    background-size: cover;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0.425);
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+   /* HEADER+NAVBAR */
+header {
+    background-color: black;
+    box-shadow: 0px 5px 18px 6px rgba(0,0,0,0.69);
+    margin-bottom: 70px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {
+    display: inline-block;
+    background: url("../images/logoshmit.jpg");
+    background-size: cover;
+    height: 7.14rem;
+    width: 8.57rem;
+}
+
+
+
+.main-menu ul li {
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.main-menu ul li a:hover {
+    text-decoration: none;
+    color: rgba(255, 166, 0, 0.822);
+    padding: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    
+}
+
+.active:hover {
+    border-bottom: 4px solid rgba(255, 166, 0, 0.822);
+}
+
+.active {
+    border-bottom: 4px solid white;
+}
+
+/* Main-Section */
+
+h3 {
+    margin: 0;
+    padding: 0;
+}
+.main-section {
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    padding: 15px;
+    margin-bottom: 150px;
+}
+
+.far,.fas {
+    font-family: "Font Awesome 5 Free";
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 14px;
+}
+
+
+/* Footer */
+footer {
+    background: black;
+    box-shadow: 0px -5px 18px 6px rgba(0,0,0,0.64);
+    color: white;
+    margin-top: auto;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+footer h3 {
+    color: white;
+    padding-top: 25px;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+.main-footer {
+    display: flex;
+    margin-bottom: 39px;
+}
+
+.follow-us {    
+    color: white;
+    flex: 2;
+}
+
+.contact-us {
+
+    color: white;
+    flex: 1;
+    text-align: center;
+}
+
+.fab {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 14px;
+}
+
+.follow-us {
+    display: flex;
+}
+
+.social {
+    flex: 1;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.slider a {
+    display: block;
+}
+
+.slider img {
+    height: 300px;
+    transition: filter .3s;
+}
+
+.slider img:hover {
+    filter: brightness(.65);
+}
+.slider {
+    margin-bottom: 70px;
+}
+
+.burger-button {
+    text-decoration: none;
+    color: white;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 20px;
+}
+
+.main-menu-close {
+  display: none;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.main-menu-close::before,
+.main-menu-close::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  transform-origin: center;
+}
+
+.main-menu-close::before {
+  transform: rotate(45deg);
+}
+
+.main-menu-close::after {
+  transform: rotate(-45deg);
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 767px) {
+  .burger-button {
+    display: block;
+  }
+
+  .main-menu {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0, .8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 50px 10px 20px;
+    text-align: center;
+
+    transform: translateX(100%);
+    transition: transform .3s;
+  }
+
+  .main-menu.is-active {
+    transform: translateX(0);
+  }
+
+  .main-menu ul li {
+    display: block;
+  }
+
+  .main-menu li + li {
+    margin-top: 15px;
+  }
+
+  .main-menu a.active {
+    border: none;
+  }
+
+  .main-menu-close {
+    display: block;
+  }
+}

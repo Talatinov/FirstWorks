@@ -1,0 +1,33 @@
+.main-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hristo-about {
+    border: 1px solid rgba(255, 255, 255, 0.685);
+    width: 193px;
+}
+
+.iliya-about {
+    border: 1px solid rgba(255, 255, 255, 0.685);
+    width: 203px;
+}
+
+.card img {
+    width: 100%;
+    
+
+}
+
+.about-info {
+    padding: 5px;
+}
+
+.main-section a {
+    text-decoration: none;
+    color: white;
+    display: inherit;
+    padding-right: 8px;
+    text-align: end;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,40 @@
+.main-section {
+    display: flex;
+}
+
+.google-map {
+    border-right: 2px solid white;
+    flex: 0 0 60%;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 15px;
+    max-width: 60%;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 35px 0;
+    flex: 1;
+}
+
+@media only screen and (max-width:1024px) {
+    .map {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media only screen and (max-width:426px) {
+    .main-section {
+        display: block;
+    }
+    .google-map {
+        border: none;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+}
+
